@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">eratosfen2</string>
+    <string name="count">Count sync</string>
+    <string name="count_async">Count async</string>
+    <string name="click_me">Click me for reaction</string>
+    <string name="time_calculation">Time calculation:</string>
+    <string name="action_yes">Yes</string>
+    <string name="action_no">No</string>
+    <string name="result_title">Little question</string>
+    <string name="result_message">Run execution?</string>
+    <string name="action_ignore">No</string>
+</resources>
