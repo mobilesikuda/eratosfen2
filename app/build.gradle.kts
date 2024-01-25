@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "ru.sikuda.mobile.eratosfen2"
-        minSdk = 27
+        minSdk = 25
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
