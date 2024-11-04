@@ -77,7 +77,7 @@ fun MainView(modifier: Modifier = Modifier) {
         Button(onClick = {
             val listener = DialogInterface.OnClickListener { _, which ->
                 when (which) {
-                    DialogInterface.BUTTON_POSITIVE -> viewModel.RunCalcSync()
+                    DialogInterface.BUTTON_POSITIVE -> viewModel.runCalcSync()
                     DialogInterface.BUTTON_NEGATIVE,
                     DialogInterface.BUTTON_NEUTRAL -> {
                         Toast.makeText(context, "May be next time", Toast.LENGTH_SHORT).show()
@@ -102,7 +102,7 @@ fun MainView(modifier: Modifier = Modifier) {
             Text(text = getString(context, R.string.count))
         }
         Button(
-            onClick = { viewModel.RunCalc() }) {
+            onClick = { viewModel.runCalc() }) {
             Text(text = getString(context,R.string.count_async))
         }
 

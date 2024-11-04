@@ -14,24 +14,24 @@ class MainViewModel: ViewModel() {
     val text = _text.asStateFlow()
 
     //run async routing
-    fun RunCalc(){
+    fun runCalc(){
         viewModelScope.launch {
             _text.value = "Async calc..."
             val result = withContext( Dispatchers.Default ) {
-                return@withContext Calculate()
+                return@withContext calculate()
             }
-            _text.value = "Async-"+result
+            _text.value = "Async-$result"
         }
     }
 
     //run sync routing
-    fun RunCalcSync(){
+    fun runCalcSync(){
         _text.value = "Sync calc..."
-        _text.value = "Sync-"+Calculate()
+        _text.value = "Sync-"+calculate()
     }
 
     //run execution
-    private fun Calculate(): String {
+    private fun calculate(): String {
 
         val n = 50_000_000
         val array: Array<Int> = Array(n+1) { 1 }
